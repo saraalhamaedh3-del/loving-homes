@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes - فندق رعاية الكلاب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    
+</div>
+    <div id="accessibility-panel" class="accessibility-panel">
+        <button class="accessibility-toggle" onclick="toggleAccessibility()" aria-label="إمكانية الوصول">
+            <span>♿</span>
+        </button>
+        <div class="accessibility-content">
+            <h3>إمكانية الوصول</h3>
+            <div class="accessibility-section">
+                <label>حجم النص:</label>
+                <div class="btn-group">
+                    <button onclick="setFontSize('small')">صغير</button>
+                    <button onclick="setFontSize('medium')" class="active">متوسط</button>
+                    <button onclick="setFontSize('large')">كبير</button>
+                </div>
+            </div>
+            <div class="accessibility-section">
+                <label>نمط الخط:</label>
+                <div class="btn-group">
+                    <button onclick="setFontStyle('cairo')">عادي</button>
+                    <button onclick="setFontStyle('readable')">سهل القراءة</button>
+                </div>
+            </div>
+            <div class="accessibility-section">
+                <label>التباين:</label>
+                <div class="btn-group">
+                    <button onclick="setContrast('normal')" class="active">عادي</button>
+                    <button onclick="setContrast('high')">عالي</button>
+                </div>
+            </div>
+            <div class="accessibility-section">
+                <label>قراءة النص:</label>
+                <div class="btn-group">
+                    <button onclick="startReading()" id="readBtn">▶ قراءة</button>
+                    <button onclick="stopReading()" id="stopBtn">⏸ إيقاف</button>
+                    <div class="accessibility-section">
+                <button onclick="resetAccessibility()" class="reset-btn">إعادة تعيين</button>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-section logo-side">
+    <img src="d:\مواقع سارا الشقور\التوثيق\Gemini_Generated_Image_sf2su8sf2su8sf2s.png" 
+         alt="Loving Homes Logo" 
+         class="site-logo">
+    </div>
+    <aside>
+        <div class="logo">Loving <b>Homes</b></div>
+        <ul class="nav-menu">
+            <li><a href="#" onclick="showPage('p1')" class="active">01. الرئيسية</a></li>
+            <li><a href="#" onclick="showPage('p2')">02. خدماتنا</a></li>
+            <li><a href="#" onclick="showPage('p3')">03. أنواع الكلاب</a></li>
+            <li><a href="#" onclick="showPage('p4')">04. مأكولات الكلاب</a></li>
+            <li><a href="#" onclick="showPage('p5')">05. مرافق الكلاب</a></li>
+            <li><a href="#" onclick="showPage('p6')">06. الأقسام</a></li>
+            <li><a href="#" onclick="showPage('p7')">07. العناية</a></li>
+            <li><a href="#" onclick="showPage('p8')">08. الفعاليات</a></li>
+            <li><a href="#" onclick="showPage('p9')">09. المعرض</a></li>
+            <li><a href="#" onclick="showPage('p10')">10. الأسعار</a></li>
+            <li><a href="#" onclick="showPage('p11')">11. تواصل معنا</a></li>
+        </ul>
+        <div style="margin-top: 20px; font-size: 11px; opacity: 0.6;">
+            <p>المالك: سارا الحمايدة</p>
+            <p>© 2026 هونج كونج، الصين</p>
+        </div>
+    </aside>
+    <main>
+        <div class="top-nav">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="ابحث عن ما تريد هنا...">
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <select style="background:none; border:none; color:var(--text-main); font-weight: bold; cursor: pointer;">
+                    <option>العربية</option>
+                    <option>English</option>
+                    <option> chaena</option>
+                </select>
+                <button class="btn-theme" onclick="toggleTheme()">🌙 تبديل النمط</button>
+            </div>
+        </div>
+        <!-- الصفحة الرئيسية -->
+        <section id="p1" class="page-content active-page">
+            <h1 class="animate-title">أهلا بك في <br> فندق Loving Homes</h1>
+            <p class="intro-text">نحن في هونج كونج، نرعى كلابكم بحب وعناية!</p>
+    <div class="hero-image-item">
+        <img src="d:\sara .html.web\التوثيق\dog 2 smlle.jpg" alt="كلب صغير سعيد">
+    </div>
+    <div class="hero-image-item">
+        <img src="d:\sara .html.web\التوثيق\dog 1 smalle.jpg" alt="كلب في الفندق">
+    </div>
+    <div class="hero-image-item">
+        <img src="d:\sara .html.web\التوثيق\pexels-goochie-poochie-3361739.jpg" alt="كلب يستمتع">
+    </div>
+     <div class="hero-image-item">
+        <img src="d:\مواقع سارا الشقور\التوثيق\cute dogs 1.jpg" alt="كلب يستمتع">
+    </div>
+</div>
+            </div>
+            <div class="features-grid">
+                <div>
+                    <h4>إقامة آمنة</h4>
+                    <p>غرف مكيفة مع كاميرات 24 ساعة</p>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Air-conditioned rooms for dogs 2.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Air-conditioned rooms for dogs 1.jpg" alt="">
+                </div>
+                <div>
+                    <h4>طعام صحي</h4>
+                    <p>وجبات من أفضل الماركات العالمية</p>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\dog food.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\food dog.jfif" alt="">
+                </div>
+                <div>
+                    <h4>رعاية خاصة</h4>
+                    <p>فريق متخصص على مدار الساعة</p>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of special care for dogs 1.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of special care for dogs 2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- صفحة الخدمات -->
+        <section id="p2" class="page-content">
+            <h2>خدماتنا المتميزة</h2>
+            <p class="section-intro">نقدم أفضل الخدمات لرعاية كلابكم</p>
+                    <p> </p>
+                      <!-- فيديو ترويجي -->
+            <div class="video-section">
+                <h3>شاهد الفيديو التوضيحي لرؤية كيف نعتني بكلابك</h3>
+                <div class="video-container">
+
+    <video id="myVideo" width="100%">
+        <source src="videos/dog-hotel.mp4" type="video/mp4">
+        <track src="subtitles-ar.vtt" kind="subtitles" srclang="ar" label="العربية" default>
+    </video>
+    <div class="video-controls">
+        <button id="playBtn" onclick="togglePlay()">▶ تشغيل</button>
+        <button id="muteBtn" onclick="toggleMute()">🔊 صوت</button>
+        <input type="range" id="volumeSlider" min="0" max="100" value="100" onchange="setVolume(this.value)">
+        <button onclick="toggleSubtitles()"> ترجمة</button>
+        <button onclick="toggleFullscreen()">⛶ ملء الشاشة</button>
+        <span id="timeDisplay">00:00 / 00:00</span>
+    </div>
+    <div class="progress-bar" onclick="seek(event)">
+        <div id="progress" class="progress"></div>
+    </div>
+</div>
+                </div>
+            </div>
+ <div class="service-item">
+    <h3>إقامة مريحة</h3>
+    <p>غرف مكيفة ومجهزة خصيصاً لكلابكم</p>
+    
+    <div class="image-gallery">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 2.jpg" alt="خدمة 1">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 3.jpg" alt="خدمة 2">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 4.jpg" alt="خدمة 3">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 5.jpg" alt="خدمة 4">
+    </div>
+</div>
+                    <h3> </h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة أنواع الكلاب -->
+        <section id="p3" class="page-content">
+            <h2>أنواع الكلاب التي نستقبلها</h2>
+            <p class="section-intro">نرحب بجميع السلالات</p>
+            <div class="destinations-grid">
+                <div class="dog-card">
+                    <img src="c:\Users\Admin\Downloads\صورة لكلبة (2).jpg" alt="الكلاب الصغيرة">
+                    <h3>الكلاب الصغيرة</h3>
+                    <p>تشيهواهوا، بومرينيان، يوركشاير</p>
+                    <button class="btn-book">احجز الآن</button>
+                </div>
+                <div class="dog-card">
+                    <img src="c:\Users\Admin\Downloads\صورة لكلبة.jpg" alt="الكلاب المتوسطة">
+                    <h3>الكلاب المتوسطة</h3>
+                    <p>بيجل، كوكر سبانيل، شيبا إينو</p>
+                    <button class="btn-book">احجز الآن</button>
+                </div>
+                <div class="dog-card">
+                    <img src="c:\Users\Admin\Downloads\صورة لكلب.jpg" alt="الكلاب الكبيرة">
+                    <h3>الكلاب الكبيرة</h3>
+                    <p>جولدن ريتريفر، جيرمان شيبرد</p>
+                    <button class="btn-book">احجز الآن</button>
+                </div>
+                <div class="dog-card">
+                    <img src="c:\Users\Admin\Downloads\صورة لكلب (3).jpg" alt="الكلاب الضخمة">
+                    <h3>الكلاب الضخمة</h3>
+                    <p>سانت برنارد، نيوفاوندلاند</p>
+                    <button class="btn-book">احجز الآن</button>
+                </div>
+            </div>
+        </section>
+        <!-- صفحة المأكولات -->
+        <section id="p4" class="page-content">
+            <h2>طعام صحي للكلاب</h2>
+            <p class="section-intro">وجبات متوازنة من أفضل الماركات العالمية</p>
+            <div class="cuisine-grid">
+                <div class="food-card">
+                    <img src="c:\Users\Admin\Desktop\food dog.jfif" alt="الطعام الجاف">
+                    <h3>الطعام الجاف</h3>
+                    <p>أفضل الماركات العالمية للطعام الجاف الصحي</p>
+                    <span class="cuisine-tag">أساسي</span>
+                </div>
+                <div class="food-card">
+                    <img src="c:\Users\Admin\Desktop\food dog - Copy.jfif" alt="الطعام الرطب">
+                    <h3>الطعام الرطب</h3>
+                    <p>علب طعام طازجة بمختلف النكهات</p>
+                    <span class="cuisine-tag">مفضل</span>
+                </div>
+                <div class="food-card">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog food 5.jpg" alt="الوجبات الخاصة">
+                    <h3>الوجبات الخاصة</h3>
+                    <p>وجبات مخصصة حسب عمر وحجم الكلب</p>
+                    <span class="cuisine-tag">مخصص</span>
+                </div>
+                <div class="food-card">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog food 4.jpg" alt="الأسماك الطازجة">
+                    <h3>الأسماك الطازجة</h3>
+                    <p>سمك السلمون والتونة للكلاب</p>
+                    <span class="cuisine-tag">صحي</span>
+                </div>
+                <div class="food-card">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog food 2.jpg" alt="المكافآت">
+                    <h3>المكافآت والحلويات</h3>
+                    <p>بسكويت ومكافآت صحية للتدريب</p>
+                    <span class="cuisine-tag">لذيذ</span>
+                </div>
+                <div class="food-card">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog drinks 1.jpg" alt="المشروبات">
+                    <h3>المشروبات</h3>
+                    <p>ماء نظيف طوال اليوم وحليب خاص للجراء</p>
+                    <span class="cuisine-tag">أساسي</span>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة المرافق -->
+        <section id="p5" class="page-content">
+    <h2>مرافق الكلاب</h2>
+    <p class="section-intro">مرافق حديثة ومجهزة بالكامل</p>
+    <div class="facilities-showcase">
+        
+        <div class="facility-card">
+            <h3>مسبح الكلاب</h3>
+            <p>مسبح خاص للسباحة والعناية</p>
+            <div class="gallery-wrap">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of a small swimming pool for dogs 3.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of a small swimming pool for dogs 1.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of a small swimming pool for dogs 5.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of a small swimming pool for dogs 4.jpg" alt="">
+            </div>
+        </div>
+        <div class="facility-card">
+            <h3>ملعب رياضي</h3>
+            <p>مساحات واسعة للعب والتمارين</p>
+            <div class="gallery-wrap">
+                <img src="d:\مواقع سارا الشقور\التوثيق\istockphoto-539984208-1024x1024.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\istockphoto-514628198-1024x1024.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\pictures of dog-related events and activities. 1.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\istockphoto-490311583-1024x1024.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\pictures of dog-related events and activities. 2.jpg" alt="">
+            </div>
+        </div>
+        <div class="facility-card">
+            <h3>غرف النوم</h3>
+            <p>أسرة مريحة ومنتجات عناية فاخرة</p>
+            <div class="gallery-wrap">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 1.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 6.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 8.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Photos of special services offered at a dog hotel 7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </section>
+        <!-- صفحة الأقسام -->
+        <section id="p6" class="page-content">
+    <h2>أقسام الفندق</h2>
+    <p class="section-intro">أقسام متخصصة لكل احتياجات كلبكم</p>
+    <p>تقدم الفندق اقسام خاصة باللعب والمواصلات وساحات خضراء واسعة , ليستطيعوا المرح واللعب بكل امان وراحة , وقسم المواصلات التي نوفرها لكلابكم , ليكونوا بأمان </p>
+    
+    <div class="rooms-grid">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 1.jpg" alt="قسم 1">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 2.jpg" alt="قسم 2">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 3.jpg" alt="قسم 3">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 4.jpg" alt="قسم 4">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 5.jpg" alt="قسم 5">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 6.jpg" alt="قسم 6">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 7.jpg" alt="قسم 7">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 8.jpg" alt="قسم 8">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 9.jpg" alt="قسم 9">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 10.jpg" alt="قسم 10"> 
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 11.jpg" alt="قسم 11">
+        <img src="d:\مواقع سارا الشقور\التوثيق\Photos of the hotel's dog-friendly sections 12.jpg" alt="قسم 12">
+    </div>
+</section>
+        <!-- صفحة العناية -->
+        <section id="p7" class="page-content">
+            <h2>العناية والاستحمام</h2>
+            <p class="section-intro">خدمات عناية متكاملة لكلابكم</p>
+            <div class="spa-grid">
+                <div class="spa-card">
+                    <h3> استحمام</h3>
+                    <p>استحمام وت drieskin care</p>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\pictures of dogs bathing 1.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\pictures of dogs bathing 2.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\pictures of dogs bathing 3.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\pictures of dogs bathing 4.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\pictures of dogs bathing 5.jpg" alt="">
+                </div>
+                <div class="spa-card">
+                    <h3> قص الشعر</h3>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 1.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 2.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog haircuts 1.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog haircuts 2.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog haircuts 3.jpg" alt="">
+                </div>
+                <div class="spa-card">
+                    <h3> العناية الصحية</h3>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 7.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 4.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 5.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 8.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures, care, and bathing of dogs 6.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+        <!-- صفحة الفعاليات -->
+        <section id="p8" class="page-content">
+            <h2>الفعاليات والأنشطة</h2>
+            <p class="section-intro">أنشطة ممتعة لكلابكم</p>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3> حفلات الكلاب</h3>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog parties 1.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog parties 2.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of dog parties 3.jpg" alt="">
+                </div>
+                <div class="event-card">
+                    <h3> مسابقات رياضية</h3>
+                    <img src="d:\مواقع سارا الشقور\التوثيق\istockphoto-586706338-1024x1024.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\istockphoto-539984208-1024x1024.jpg" alt="">
+                    <img src="d:\مواقع سارا الشقور\التوثيق\istockphoto-514628198-1024x1024.jpg" alt="">
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة معرض الصور -->
+        <section id="p9" class="page-content">
+            <h2>معرض الكلاب</h2>
+            <p class="section-intro">صور ضيوفنا السعداء</p>
+            <div class="gallery-grid">
+                <div><img src="d:\مواقع سارا الشقور\التوثيق\small dogs 1.jpg" alt="كلب"></div>
+                <div><img src="d:\مواقع سارا الشقور\التوثيق\small dogs 2.jpg" alt="كلب"></div>
+                <div><img src="d:\مواقع سارا الشقور\التوثيق\small dogs 3.jpg" alt="كلب"></div>
+                <div><img src="d:\مواقع سارا الشقور\التوثيق\small dogs 4.jpg" alt="كلب"></div>
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of small dogs 5.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of small dogs 6.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of small dogs 7.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of small dogs 8.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of small dogs 9.jpg" alt="">
+                <img src="d:\مواقع سارا الشقور\التوثيق\Pictures of small dogs 10.jpg" alt="">
+            </div>
+        </section>
+
+      <section id="p10" class="page-content">
+    <div class="section-header">
+        <h2>باقات الإقامة والأسعار</h2>
+        <p class="section-intro">اختر الباقة المثالية التي تناسب احتياجات أليفك المدلل</p>
+    </div>
+    
+    <div class="price-cards">
+        <div class="price-card">
+            <div class="card-title">الباقة الأساسية</div>
+            <div class="price-tag">50$ <span>/ يوم</span></div>
+            <ul class="price-features">
+                <li> إقامة في غرفة مشتركة</li>
+                <li>وجبتان يومياً</li>
+                <li> عناية أساسية</li>
+                <li> وقت للعب في الحديقة</li>
+            </ul>
+            <button class="btn-book">احجز الآن</button>
+        </div>
+        <div class="price-card featured">
+            <div class="popular-badge">الأكثر طلباً</div>
+            <div class="card-title">الباقة الذهبية</div>
+            <div class="price-tag">80$ <span>/ يوم</span></div>
+            <ul class="price-features">
+                <li> غرفة خاصة مريحة</li>
+                <li> 3 وجبات يوميا (طازجة)</li>
+                <li> تمارين يومية مكثفة</li>
+                <li> تحديثات بالصور للمالك</li>
+            </ul>
+            <button class="btn-book">احجز الآن</button>
+        </div>
+        <div class="price-card">
+            <div class="card-title">باقة VIP</div>
+            <div class="price-tag">120$ <span>/ يوم</span></div>
+            <ul class="price-features">
+                <li> جناح ملكي خاص</li>
+                <li> وجبات فاخرة مخصصة</li>
+                <li> عناية طبية وتدليك</li>
+                <li> كاميرا مراقبة خاصة 24/7</li>
+            </ul>
+            <button class="btn-book">احجز الآن</button>
+        </div>
+    </div>
+</section>
+
+        <!-- صفحة تواصل معنا -->
+        <section id="p11" class="page-content">
+            <h2>تواصل معنا</h2>
+            <p class="section-intro">نحن هنا لمساعدتك</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>معلومات الاتصال</h3>
+                    <p>📍 هونج كونج، الصين</p>
+                    <p>📞 +852 1234 5678</p>
+                    <p>✉️ info@lovinghomes.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3>أرسل رسالة</h3>
+                    <form>
+                        <input type="text" placeholder="اسمك">
+                        <input type="email" placeholder="بريدك الإلكتروني">
+                        <textarea placeholder="رسالتك"></textarea>
+                        <button type="submit" class="btn-submit">إرسال</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
